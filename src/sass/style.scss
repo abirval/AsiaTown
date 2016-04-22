@@ -1,0 +1,263 @@
+@import "../../bootstrap/stylesheets/_bootstrap.scss";
+
+@font-face {
+	font-family: 'StudioScriptCTT';
+	src: url('fonts/studioscriptctt.ttf');
+}
+
+
+
+//variables
+$roboto-con: 'Roboto Condensed';
+$button-color: #15293a;
+
+.default-btn {
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: #15293a;
+    border-radius: 0;
+    padding: 14px 19px;
+
+    &:hover{
+        background-color: lighten(#15293a, 10%);
+    }
+
+    &:active {
+        background-color: darken(#15293a, 2%);
+    }
+}
+
+/*-----------------Medias-------------*/
+
+@media (min-width: 1200px) {
+    .container{
+        max-width: 1200px;
+    }
+}
+
+@media (max-width: 978px) {
+    .container, .container-fluid {
+      padding:0;
+      margin:0;
+    }
+
+    .bg-grey {
+        padding: 0;
+    }
+
+    body {
+      padding:0;
+    }
+
+    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom:0;
+    }
+}
+/*------------------------------------*/
+
+/*-----------Mixibns---------------*/
+@mixin rot($str) {
+    -webkit-transition: #{$str};
+       -moz-transition: #{$str};
+        -ms-transition: #{$str};
+            transition: #{$str};
+}
+/*-------------------------------*/
+
+.center {
+    margin: 0 auto;
+    width: 100%;
+}
+
+body {
+    padding-top: 100px;
+}
+.navbar-nav {
+    li {
+        text-transform: uppercase;
+        list-style-type: circle;
+        margin-left: 60px;
+    }
+
+    ul {
+        list-style-type: circle;
+    }
+}
+
+div.navbar-header > a {
+    padding: 0;
+}
+
+.icon {
+    height: $navbar-height;
+    color: $navbar-default-link-color;
+    margin-left: 150px;
+
+
+    .tele {
+        display: inline-block;
+        text-align: center;
+        height: $navbar-height;
+        padding-top: 15px;
+        clear: both;
+
+        span {
+            display: block;
+            margin-top: 5px;
+        }
+    }
+
+    .instagram {
+        @extend .tele;
+        margin-left: 50px;
+
+        img {
+            height: 37px;
+        }
+    }
+}
+
+.work-hours {
+    background-image: url('images/castle_back.png');
+    background-repeat: no-repeat;
+    background-position: 20% bottom;
+    text-transform: uppercase;
+    padding-top: 115px;
+    padding-bottom: 400px;
+    overflow: hidden;
+
+    .col-md-4 {
+        h1 {
+            font-family: 'Roboto Condensed';
+            font-weight: 700;
+            font-size: 48px;
+        }
+        p {
+            display: block;
+            // width: 640px;
+            font-size: 36px;
+            font-weight: 100;
+
+            span {
+                color: red;
+            }
+        }
+
+        .tel-btn {
+            @extend .default-btn;
+        }
+    }
+
+    .col-md-6{
+        .rotate-1 {
+            position: absolute;
+            top: 20px;
+            left: 60%;
+            width: 100px;
+
+            @include rot(all 0.3s linear);
+        }
+
+        .rotate-2 {
+            position: absolute;
+            top: 150px;
+            left: 0;
+
+            @include rot(all 0.3s linear);
+        }
+
+        .rotate-3 {
+            position: absolute;
+            top: 750px;
+            left: 45%;
+
+            @include rot(all 0.3s linear);
+        }
+
+
+    }
+}
+
+.bg-grey {
+    // padding: 50px 90px;
+    background: #f1f5f8 url('images/wok.png') no-repeat 20% 50%;
+    padding: 200px 0;
+    background-size: contain;
+
+    .description {
+        font-family: $roboto-con;
+        font-weight: 400;
+        font-size: 48px;
+        text-transform: uppercase;
+
+        span {
+            color: red;
+        }
+    }
+
+    .composition {
+        @extend .description;
+        font-size: 36px;
+        font-weight: 300;
+    }
+
+    .tel2-btn {
+        @extend .default-btn;
+        font-size: 4em;
+    }
+}
+
+.menu-row {
+    background-color: #282726;
+
+    h1 {
+        font: bold 78px $roboto-con;
+        color: #fff;
+        text-transform: uppercase;
+
+        span {
+            color: #fe4040;
+        }
+    }
+
+    .menu {
+        .table {
+            background: url('images/menu-table.png') no-repeat;
+            background-size: contain;
+            color: #d2d2d4;
+            font-size: 50px;
+            font-family: 'StudioScriptCTT', arial;
+            width: 600px;
+            height: 870px;
+
+            p {
+                margin-top: 110px;
+                margin-left: 140px;
+                font-size: 90px;
+            }
+
+            .menu-items {
+                list-style: none;
+                padding: 0;
+                font-size: 72px;
+
+                .menu-item {
+                    margin-left: 140px;
+                    line-height: 77px;
+
+                    &:hover {
+                        color: #ffb932;
+                    }
+                }
+            }
+        }
+
+        .chinese {
+            background-color: #fff;
+            height: 500px;
+        }
+    }
+}
