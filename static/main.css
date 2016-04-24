@@ -7341,6 +7341,10 @@ button.close {
   font-family: 'StudioScriptCTT';
   src: url("fonts/studioscriptctt.ttf");
 }
+@font-face {
+  font-family: 'Razmahont';
+  src: url("fonts/8408.ttf");
+}
 .default-btn, .work-hours .col-md-4 .tel-btn, .bg-grey .tel2-btn {
   font-size: 25px;
   text-transform: uppercase;
@@ -7514,12 +7518,14 @@ div.navbar-header > a {
 .menu-row h1 span {
   color: #fe4040;
 }
-.menu-row .menu .table {
-  background: url("images/menu-table.png") no-repeat;
-  background-size: contain;
+.menu-row .menu {
   color: #d2d2d4;
   font-size: 50px;
   font-family: 'StudioScriptCTT', arial;
+}
+.menu-row .menu .table {
+  background: url("images/menu-table.png") no-repeat;
+  background-size: contain;
   width: 600px;
   height: 870px;
 }
@@ -7536,13 +7542,41 @@ div.navbar-header > a {
 .menu-row .menu .table .menu-items .menu-item {
   margin-left: 140px;
   line-height: 77px;
+  cursor: pointer;
 }
 .menu-row .menu .table .menu-items .menu-item:hover {
   color: #ffb932;
 }
+.menu-row .menu .table .active-menu-item {
+  color: #ffb932;
+}
 .menu-row .menu .chinese {
-  background-color: #fff;
-  height: 500px;
+  height: 790px;
+}
+.menu-row .menu .chinese .tabs_list {
+  background: url("images/chineese.png") no-repeat bottom right;
+  background-size: 650px;
+  width: 710px;
+  height: 800px;
+  padding: 210px 0 0 90px;
+}
+.menu-row .menu .chinese .tabs_list .tabs_item {
+  display: none;
+}
+.menu-row .menu .chinese .tabs_list .tabs_item ul {
+  list-style: none;
+  font-family: 'Razmahont';
+  font-size: 45px;
+  line-height: 40px;
+}
+.menu-row .menu .chinese .tabs_list .tabs_item ul li {
+  cursor: pointer;
+}
+.menu-row .menu .chinese .tabs_list .tabs_item ul li:hover {
+  color: #ffb932;
+}
+.menu-row .menu .chinese .tabs_list .active {
+  display: block;
 }
 
 /*# sourceMappingURL=main.css.map */

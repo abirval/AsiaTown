@@ -5,7 +5,10 @@
 	src: url('fonts/studioscriptctt.ttf');
 }
 
-
+@font-face {
+	font-family: 'Razmahont';
+	src: url('fonts/8408.ttf');
+}
 
 //variables
 $roboto-con: 'Roboto Condensed';
@@ -224,12 +227,16 @@ div.navbar-header > a {
     }
 
     .menu {
+		color: #d2d2d4;
+		font-size: 50px;
+		font-family: 'StudioScriptCTT', arial;
+
         .table {
             background: url('images/menu-table.png') no-repeat;
             background-size: contain;
-            color: #d2d2d4;
-            font-size: 50px;
-            font-family: 'StudioScriptCTT', arial;
+            // color: #d2d2d4;
+            // font-size: 50px;
+            // font-family: 'StudioScriptCTT', arial;
             width: 600px;
             height: 870px;
 
@@ -247,17 +254,52 @@ div.navbar-header > a {
                 .menu-item {
                     margin-left: 140px;
                     line-height: 77px;
+					cursor: pointer;
 
                     &:hover {
                         color: #ffb932;
                     }
                 }
             }
+
+			.active-menu-item {
+				color: #ffb932;
+			}
         }
 
         .chinese {
-            background-color: #fff;
-            height: 500px;
-        }
+
+			height: 790px;
+
+			.tabs_list {
+				background: url('images/chineese.png') no-repeat bottom right;
+				background-size: 650px;
+				width: 710px;
+				height: 800px;
+				padding: 210px 0 0 90px;
+
+				.tabs_item {
+					display: none;
+
+					ul {
+						list-style: none;
+						font-family: 'Razmahont';
+						font-size: 45px;
+						line-height: 40px;
+						li {
+							cursor: pointer;
+
+							&:hover {
+								color:#ffb932;
+							}
+						}
+					}
+				}
+
+				.active {
+					display: block;
+				}
+			}
+		}
     }
 }

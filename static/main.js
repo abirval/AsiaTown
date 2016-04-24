@@ -32,10 +32,18 @@ window.addEventListener('load', function () {
 	                rotateEl(rotate3, 0.2);
 	            }, false);
 
-});
+	$('.menu-item').on('click', function (e) {
+		var item = $(this),
+			contentItem = $('.tabs_item'),
+			itemPosition = item.index();
 
-// $(document).ready(function (){
-// 	$(window).on('scroll', function () {
-// 		$('.rotate-1').animate({'top':'+=' +window.scrollY});
-// 	});
-// });
+		item.addClass('active-menu-item')
+			.siblings()
+			.removeClass('active-menu-item');
+
+		contentItem.eq(itemPosition)
+			.addClass('active')
+			.siblings()
+			.removeClass('active');
+	});
+});
