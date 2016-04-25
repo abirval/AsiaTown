@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bird-2 {
+    width: 39px;
+    height: 37px;
+    background-position: -5px -5px;
+}
+
+.sprite-bird-1 {
+    width: 33px;
+    height: 37px;
+    background-position: -54px -5px;
+}
+
+.sprite-inst {
+    width: 42px;
+    height: 41px;
+    background-position: -97px -5px;
+}
+
+.sprite-phone {
+    width: 27px;
+    height: 37px;
+    background-position: -5px -56px;
+}
