@@ -303,3 +303,28 @@ div.navbar-header > a {
 		}
     }
 }
+
+.our-life {
+	padding-top: 120px;
+	padding-bottom: 120px;
+
+	h1 {
+		font: bold 120px $roboto-con;
+		color: #ff4359;
+		margin-bottom: 80px;
+	}
+
+	.carousel {
+		font: italic 48px $roboto-con;
+		line-height: 48px;
+		color: #242c33;
+		width: 80%;
+		height: 210px;
+		margin: 0 auto;
+		margin-bottom: 70px;
+	}
+
+	.our-img {
+		padding: 0;
+	}
+}

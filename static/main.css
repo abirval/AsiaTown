@@ -7579,4 +7579,26 @@ div.navbar-header > a {
   display: block;
 }
 
+.our-life {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.our-life h1 {
+  font: bold 120px "Roboto Condensed";
+  color: #ff4359;
+  margin-bottom: 80px;
+}
+.our-life .carousel {
+  font: italic 48px "Roboto Condensed";
+  line-height: 48px;
+  color: #242c33;
+  width: 80%;
+  height: 210px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.our-life .our-img {
+  padding: 0;
+}
+
 /*# sourceMappingURL=main.css.map */
