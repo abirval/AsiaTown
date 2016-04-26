@@ -13,6 +13,7 @@
 //variables
 $roboto-con: 'Roboto Condensed';
 $button-color: #15293a;
+$catch-color: #f83861;
 
 .default-btn {
     font-size: 25px;
@@ -315,7 +316,7 @@ div.navbar-header > a {
 
 	h1 {
 		font: bold 120px $roboto-con;
-		color: #ff4359;
+		color: $catch-color;
 		margin-bottom: 40px;
 	}
 
@@ -363,5 +364,45 @@ div.navbar-header > a {
 	    height: 37px;
 		background-image: url('images/sprite.png');
 	    background-position: -5px -5px;
+	}
+}
+
+.delivery {
+	padding-top: 200px;
+	padding-bottom: 150px;
+	background-image: url('images/dev-vagon.png'), url('images/chineese-deliv.png');
+	background-position: 95% 95%, 10% -180px;
+	background-repeat: no-repeat, no-repeat;
+
+	h1 {
+		margin-bottom: 80px;
+		font: bold 80px $roboto-con;
+		text-transform: uppercase;
+
+		span {
+			color: $catch-color;
+		}
+	}
+
+	.descr {
+		display: block;
+		color: #242c33;
+
+		.deliv {
+			// font: 40px $roboto-con;
+			font-size: 30px;
+		}
+
+		.akcii {
+			font: italic 20px $roboto-con;
+		}
+
+		.make-call {
+			margin-top: 85px;
+			@extend .default-btn;
+			background-color: $catch-color;
+			padding-left: 60px;
+			padding-right: 60px;
+		}
 	}
 }
