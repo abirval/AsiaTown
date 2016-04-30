@@ -7345,7 +7345,7 @@ button.close {
   font-family: 'Razmahont';
   src: url("fonts/8408.ttf");
 }
-.default-btn, .work-hours .col-md-4 .tel-btn, .bg-grey .tel2-btn, .delivery .descr .make-call {
+.default-btn, .work-hours .col-md-4 .tel-btn, .bg-grey .tel2-btn, .delivery .descr .make-call, .subbing .form-inline .btn {
   font-size: 25px;
   text-transform: uppercase;
   color: #fff;
@@ -7353,10 +7353,10 @@ button.close {
   border-radius: 0;
   padding: 14px 19px;
 }
-.default-btn:hover, .work-hours .col-md-4 .tel-btn:hover, .bg-grey .tel2-btn:hover, .delivery .descr .make-call:hover {
+.default-btn:hover, .work-hours .col-md-4 .tel-btn:hover, .bg-grey .tel2-btn:hover, .delivery .descr .make-call:hover, .subbing .form-inline .btn:hover {
   background-color: #23435f;
 }
-.default-btn:active, .work-hours .col-md-4 .tel-btn:active, .bg-grey .tel2-btn:active, .delivery .descr .make-call:active {
+.default-btn:active, .work-hours .col-md-4 .tel-btn:active, .bg-grey .tel2-btn:active, .delivery .descr .make-call:active, .subbing .form-inline .btn:active {
   background-color: #122433;
 }
 
@@ -7664,6 +7664,59 @@ div.navbar-header > a {
   background-color: #f83861;
   padding-left: 60px;
   padding-right: 60px;
+}
+
+.subbing {
+  background-color: #d2d6d3;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.subbing h1 {
+  width: 80%;
+  margin: 0 auto;
+  color: #f16164;
+  text-transform: uppercase;
+  font-size: 60px;
+  font-family: "Roboto Condensed";
+  font-style: italic;
+  font-weight: bold;
+}
+.subbing .form-inline {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 60px;
+}
+.subbing .form-inline .form-group {
+  width: 50%;
+}
+.subbing .form-inline .form-group input {
+  width: 100%;
+  height: 65px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  font-size: 25px;
+}
+.subbing .form-inline .form-group input::-moz-placeholder {
+  color: #797e82;
+  font-weight: 100;
+}
+.subbing .form-inline .form-group input::-webkit-input-placeholder {
+  color: #797e82;
+  font-weight: 100;
+}
+.subbing .form-inline .form-group input::-ms-input-placeholder {
+  color: #797e82;
+  font-weight: 100;
+}
+.subbing .form-inline .btn {
+  background-color: #f2ba52;
+  color: #474748;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.subbing .form-inline .btn:hover {
+  background-color: #f0b13a;
 }
 
 /*# sourceMappingURL=main.css.map */

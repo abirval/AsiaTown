@@ -16,259 +16,269 @@ $button-color: #15293a;
 $catch-color: #f83861;
 
 .default-btn {
-    font-size: 25px;
-    text-transform: uppercase;
-    color: #fff;
-    background-color: #15293a;
-    border-radius: 0;
-    padding: 14px 19px;
+	font-size: 25px;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #15293a;
+	border-radius: 0;
+	padding: 14px 19px;
 
-    &:hover{
-        background-color: lighten(#15293a, 10%);
-    }
+	&:hover{
+		background-color: lighten(#15293a, 10%);
+	}
 
-    &:active {
-        background-color: darken(#15293a, 2%);
-    }
+	&:active {
+		background-color: darken(#15293a, 2%);
+	}
 }
 
 /*-----------------Medias-------------*/
 
 @media (min-width: 1200px) {
-    .container{
-        max-width: 1200px;
-    }
+	.container{
+		max-width: 1200px;
+	}
 }
 
 @media (max-width: 978px) {
-    .container, .container-fluid {
-      padding:0;
-      margin:0;
-    }
+	.container, .container-fluid {
+	  padding:0;
+	  margin:0;
+	}
 
-    .bg-grey {
-        padding: 0;
-    }
+	.bg-grey {
+		padding: 0;
+	}
 
-    body {
-      padding:0;
-    }
+	body {
+	  padding:0;
+	}
 
-    .navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom:0;
-    }
+	.navbar-fixed-top, .navbar-fixed-bottom, .navbar-static-top {
+	  margin-left: 0;
+	  margin-right: 0;
+	  margin-bottom:0;
+	}
 }
 /*------------------------------------*/
 
 /*-----------Mixibns---------------*/
 @mixin rot($str) {
-    -webkit-transition: #{$str};
-       -moz-transition: #{$str};
-        -ms-transition: #{$str};
-            transition: #{$str};
+	-webkit-transition: #{$str};
+	   -moz-transition: #{$str};
+		-ms-transition: #{$str};
+			transition: #{$str};
+}
+
+@mixin vendor-prefix($name, $argument) {
+    -webkit-#{$name}: #{$argument};
+    -ms-#{$name}: #{$argument};
+    -moz-#{$name}: #{$argument};
+    -o-#{$name}: #{$argument};
+    #{$name}: #{$argument};
 }
 /*-------------------------------*/
 
 .center {
-    margin: 0 auto;
-    width: 100%;
+	margin: 0 auto;
+	width: 100%;
 }
 
 body {
-    padding-top: 100px;
+	padding-top: 100px;
 }
 .navbar-nav {
-    li {
-        text-transform: uppercase;
-        list-style-type: circle;
-        margin-left: 60px;
-    }
+	li {
+		text-transform: uppercase;
+		list-style-type: circle;
+		margin-left: 60px;
+	}
 
-    ul {
-        list-style-type: circle;
-    }
+	ul {
+		list-style-type: circle;
+	}
 }
 
 div.navbar-header > a {
-    padding: 0;
+	padding: 0;
 }
 
 .icon {
-    height: $navbar-height;
-    color: $navbar-default-link-color;
-    margin-left: 150px;
+	height: $navbar-height;
+	color: $navbar-default-link-color;
+	margin-left: 150px;
 
 
-    .tele {
-        display: inline-block;
-        text-align: center;
-        height: $navbar-height;
-        padding-top: 15px;
-        clear: both;
+	.tele {
+		display: inline-block;
+		text-align: center;
+		height: $navbar-height;
+		padding-top: 15px;
+		clear: both;
 
-        span {
-            display: block;
-            margin-top: 5px;
-        }
-    }
+		span {
+			display: block;
+			margin-top: 5px;
+		}
+	}
 
-    .instagram {
-        @extend .tele;
-        margin-left: 50px;
+	.instagram {
+		@extend .tele;
+		margin-left: 50px;
 
-        img {
-            height: 37px;
-        }
-    }
+		img {
+			height: 37px;
+		}
+	}
 }
 
 .work-hours {
-    background-image: url('images/castle_back.png');
-    background-repeat: no-repeat;
-    background-position: 20% bottom;
-    text-transform: uppercase;
-    padding-top: 115px;
-    padding-bottom: 400px;
-    overflow: hidden;
+	background-image: url('images/castle_back.png');
+	background-repeat: no-repeat;
+	background-position: 20% bottom;
+	text-transform: uppercase;
+	padding-top: 115px;
+	padding-bottom: 400px;
+	overflow: hidden;
 
-    .col-md-4 {
-        h1 {
-            font-family: 'Roboto Condensed';
-            font-weight: 700;
-            font-size: 48px;
-        }
-        p {
-            display: block;
-            // width: 640px;
-            font-size: 36px;
-            font-weight: 100;
-
-            span {
-                color: red;
+	.col-md-4 {
+		h1 {
+            font: {
+                family: 'Roboto Condensed';
+                weight: 700;
+                size: 48px;
             }
-        }
+		}
+		p {
+			display: block;
+			// width: 640px;
+			font-size: 36px;
+			font-weight: 100;
 
-        .tel-btn {
-            @extend .default-btn;
-        }
-    }
+			span {
+				color: red;
+			}
+		}
 
-    .col-md-6{
-        .rotate-1 {
-            position: absolute;
-            top: 20px;
-            left: 60%;
-            width: 100px;
+		.tel-btn {
+			@extend .default-btn;
+		}
+	}
 
-            @include rot(all 0.3s linear);
-        }
+	.col-md-6{
+		.rotate-1 {
+			position: absolute;
+			top: 20px;
+			left: 60%;
+			width: 100px;
 
-        .rotate-2 {
-            position: absolute;
-            top: 150px;
-            left: 0;
+			@include rot(all 0.3s linear);
+		}
 
-            @include rot(all 0.3s linear);
-        }
+		.rotate-2 {
+			position: absolute;
+			top: 150px;
+			left: 0;
 
-        .rotate-3 {
-            position: absolute;
-            top: 750px;
-            left: 45%;
+			@include rot(all 0.3s linear);
+		}
 
-            @include rot(all 0.3s linear);
-        }
+		.rotate-3 {
+			position: absolute;
+			top: 750px;
+			left: 45%;
+
+			@include rot(all 0.3s linear);
+		}
 
 
-    }
+	}
 }
 
 .bg-grey {
-    // padding: 50px 90px;
-    background: #f1f5f8 url('images/wok.png') no-repeat 20% 50%;
-    padding: 200px 0;
-    background-size: contain;
+	// padding: 50px 90px;
+	background: #f1f5f8 url('images/wok.png') no-repeat 20% 50%;
+	padding: 200px 0;
+	background-size: contain;
 
-    .description {
-        font-family: $roboto-con;
-        font-weight: 400;
-        font-size: 48px;
-        text-transform: uppercase;
+	.description {
+		font-family: $roboto-con;
+		font-weight: 400;
+		font-size: 48px;
+		text-transform: uppercase;
 
-        span {
-            color: red;
-        }
-    }
+		span {
+			color: red;
+		}
+	}
 
-    .composition {
-        @extend .description;
-        font-size: 36px;
-        font-weight: 300;
-    }
+	.composition {
+		@extend .description;
+		font-size: 36px;
+		font-weight: 300;
+	}
 
-    .tel2-btn {
-        @extend .default-btn;
-        font-size: 4em;
-    }
+	.tel2-btn {
+		@extend .default-btn;
+		font-size: 4em;
+	}
 }
 
 .menu-row {
-    background-color: #282726;
+	background-color: #282726;
 
-    h1 {
-        font: bold 78px $roboto-con;
-        color: #fff;
-        text-transform: uppercase;
+	h1 {
+		font: bold 78px $roboto-con;
+		color: #fff;
+		text-transform: uppercase;
 
-        span {
-            color: #fe4040;
-        }
-    }
+		span {
+			color: #fe4040;
+		}
+	}
 
-    .menu {
+	.menu {
 		color: #d2d2d4;
 		font-size: 50px;
 		font-family: 'StudioScriptCTT', arial;
 
-        .table {
-            background: url('images/menu-table.png') no-repeat;
-            background-size: contain;
-            // color: #d2d2d4;
-            // font-size: 50px;
-            // font-family: 'StudioScriptCTT', arial;
-            width: 600px;
-            height: 870px;
+		.table {
+			background: url('images/menu-table.png') no-repeat;
+			background-size: contain;
+			// color: #d2d2d4;
+			// font-size: 50px;
+			// font-family: 'StudioScriptCTT', arial;
+			width: 600px;
+			height: 870px;
 
-            p {
-                margin-top: 110px;
-                margin-left: 140px;
-                font-size: 90px;
-            }
+			p {
+				margin-top: 110px;
+				margin-left: 140px;
+				font-size: 90px;
+			}
 
-            .menu-items {
-                list-style: none;
-                padding: 0;
-                font-size: 72px;
+			.menu-items {
+				list-style: none;
+				padding: 0;
+				font-size: 72px;
 
-                .menu-item {
-                    margin-left: 140px;
-                    line-height: 77px;
+				.menu-item {
+					margin-left: 140px;
+					line-height: 77px;
 					cursor: pointer;
 
-                    &:hover {
-                        color: #ffb932;
-                    }
-                }
-            }
+					&:hover {
+						color: #ffb932;
+					}
+				}
+			}
 
 			.active-menu-item {
 				color: #ffb932;
 			}
-        }
+		}
 
-        .chinese {
+		.chinese {
 
 			height: 790px;
 
@@ -302,7 +312,7 @@ div.navbar-header > a {
 				}
 			}
 		}
-    }
+	}
 }
 
 .our-life {
@@ -351,7 +361,7 @@ div.navbar-header > a {
 		top: 20%;
 		left: 12%;
 		width: 33px;
-	    height: 37px;
+		height: 37px;
 		background-image: url('images/sprite.png');
 		background-position: -54px -5px;
 	}
@@ -361,9 +371,9 @@ div.navbar-header > a {
 		top: 20%;
 		left: 20%;
 		width: 39px;
-	    height: 37px;
+		height: 37px;
 		background-image: url('images/sprite.png');
-	    background-position: -5px -5px;
+		background-position: -5px -5px;
 	}
 }
 
@@ -379,7 +389,7 @@ div.navbar-header > a {
 		font: bold 80px $roboto-con;
 		text-transform: uppercase;
 
-        span {
+		span {
 			color: $catch-color;
 		}
 	}
@@ -405,4 +415,71 @@ div.navbar-header > a {
 			padding-right: 60px;
 		}
 	}
+}
+
+.subbing {
+    background-color: #d2d6d3;
+    padding-top: 100px;
+    padding-bottom: 100px;
+
+    h1 {
+        width: 80%;
+        margin: 0 auto;
+        color: #f16164;
+        text-transform: uppercase;
+        font: {
+            size: 60px;
+            family: $roboto-con;
+            style: italic;
+            weight: bold;
+        }
+    }
+
+    .form-inline {
+        width: 80%;
+        margin: 0 auto;
+        margin-top: 60px;
+
+        .form-group {
+            width: 50%;
+
+            input {
+                width: 100%;
+                height: 65px;
+                -webkit-border-radius: 0;
+                -moz-border-radius: 0;
+                border-radius: 0;
+                font: {
+                    size: 25px;
+                }
+
+                &::-moz-placeholder {
+                    color: #797e82;
+                    font-weight: 100;
+                }
+                &::-webkit-input-placeholder {
+                    color: #797e82;
+                    font-weight: 100;
+                }
+                &::-ms-input-placeholder {
+                    color: #797e82;
+                    font-weight: 100;
+                }
+            }
+        }
+
+        .btn {
+            @extend .default-btn;
+            background-color: #f2ba52;
+            color: #474748;
+            padding: {
+                left: 30px;
+                right: 30px;
+            }
+            
+            &:hover {
+                background-color: darken(#f2ba52, 5%);
+            }
+        }
+    }
 }
