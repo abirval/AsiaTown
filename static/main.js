@@ -1,10 +1,10 @@
 window.addEventListener('load', function () {
 	//Функция параласка. topi- начальное положение эелемента по высоте
-	function paralax(elem, speed, topi) {
-		var scroll_amount = (window.scrollY) * speed,
-	    scroll_amount= scroll_amount + topi;
-		elem.style.top = scroll_amount + "px";
-	}
+  function paralax(elem, speed, topi) {
+    var scroll_amount = (window.scrollY) * speed,
+        scroll_amount= scroll_amount + topi;
+    elem.style.top = scroll_amount + "px";
+  }
 
 	//Функция вращения элемента при скроле. Спид регулируетугол
 	function rotateEl(elem, speed){
@@ -32,7 +32,7 @@ window.addEventListener('load', function () {
 	                rotateEl(rotate3, 0.2);
 	            }, false);
 
-	$('.menu-item').on('click', function (e) {
+	$('.menu-item').on('click', function () {
 		var item = $(this),
 			contentItem = $('.tabs_item'),
 			itemPosition = item.index();

@@ -7435,9 +7435,7 @@ div.navbar-header > a {
 }
 
 .work-hours {
-  background-image: url("images/castle_back.png");
-  background-repeat: no-repeat;
-  background-position: 20% bottom;
+  background: url("images/castle_back.png") no-repeat 20% bottom;
   text-transform: uppercase;
   padding-top: 115px;
   padding-bottom: 400px;
@@ -7717,6 +7715,29 @@ div.navbar-header > a {
 }
 .subbing .form-inline .btn:hover {
   background-color: #f0b13a;
+}
+
+.phone-row {
+  padding: 80px 0;
+}
+.phone-row .phone-icon {
+  font-size: 80px;
+  margin-bottom: 40px;
+}
+.phone-row .tel-number {
+  font-size: 80px;
+  font-weight: 700;
+}
+.phone-row .tel-number span {
+  color: #ffb932;
+  text-transform: uppercase;
+}
+.phone-row .ask-us {
+  font-size: 35px;
+  font-style: italic;
+  font-weight: 100;
+  width: 70%;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
