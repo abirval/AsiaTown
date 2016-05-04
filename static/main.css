@@ -7740,4 +7740,35 @@ div.navbar-header > a {
   margin: 0 auto;
 }
 
+footer {
+  padding: 65px 0;
+  background-color: #535960;
+  background-image: url("images/footer-bg.png");
+  background-repeat: no-repeat;
+  color: #fff;
+}
+footer .foot-nav {
+  text-transform: uppercase;
+}
+footer .foot-nav .nav-item {
+  display: inline-block;
+  margin-right: 60px;
+  font-weight: 100;
+}
+footer .foot-nav .nav-item:hover {
+  color: #ffb932;
+}
+footer .asia-name {
+  margin-top: 50px;
+  color: #fff;
+  opacity: 0.9;
+}
+footer .contacts-work {
+  margin-top: 30px;
+  color: #ffb932;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 700;
+}
+
 /*# sourceMappingURL=main.css.map */

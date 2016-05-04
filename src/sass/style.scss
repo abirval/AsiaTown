@@ -513,3 +513,45 @@ div.navbar-header > a {
     }
 }
 
+footer {
+    padding: 65px 0;
+    background: {
+        color: #535960;
+        image: url('images/footer-bg.png');
+        repeat: no-repeat;
+    }
+    color: #fff;
+
+    .foot-nav {
+        text-transform: uppercase;
+
+        .nav-item {
+            display: inline-block;
+            margin: {
+                right: 60px;
+            }
+            font-weight: 100;
+
+            &:hover {
+                color: $navbar-default-link-hover-color;
+            }
+        }
+    }
+
+    .asia-name {
+        margin-top: 50px;
+        color: #fff;
+        opacity: 0.9;
+    }
+
+    .contacts-work {
+        margin-top: 30px;
+        color: $navbar-default-link-hover-color;
+        text-transform: uppercase;
+        font: {
+            size: 30px;
+            weight: 700;
+        }
+    }
+}
+
