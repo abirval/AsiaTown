@@ -7741,7 +7741,8 @@ div.navbar-header > a {
 }
 
 footer {
-  padding: 65px 0;
+  padding-top: 65px;
+  padding-bottom: 25px;
   background-color: #535960;
   background-image: url("images/footer-bg.png");
   background-repeat: no-repeat;
@@ -7755,7 +7756,11 @@ footer .foot-nav .nav-item {
   margin-right: 60px;
   font-weight: 100;
 }
-footer .foot-nav .nav-item:hover {
+footer .foot-nav .nav-item a {
+  text-decoration: none;
+  color: #fff;
+}
+footer .foot-nav .nav-item a:hover {
   color: #ffb932;
 }
 footer .asia-name {
@@ -7763,12 +7768,59 @@ footer .asia-name {
   color: #fff;
   opacity: 0.9;
 }
-footer .contacts-work {
+footer .inform .contacts-work {
   margin-top: 30px;
   color: #ffb932;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
+}
+footer .inform ul {
+  list-style: none;
+}
+footer .inform ul li {
+  vertical-align: top;
+  text-align: left;
+  font-weight: 100;
+  font-size: 13px;
+  display: inline-block;
+  width: 320px;
+}
+footer .inform ul li p {
+  margin: 0;
+  padding: 0;
+}
+footer .inform ul li p span {
+  color: #f83861;
+}
+footer .social-links {
+  margin-top: 45px;
+}
+footer .social-links ul {
+  list-style: none;
+}
+footer .social-links ul li {
+  display: inline-block;
+  margin-right: 55px;
+}
+footer .social-links ul li .vk, footer .social-links ul li .inst {
+  background-image: url("images/foot_sprite.png");
+  background-repeat: no-repeat;
+  display: block;
+  background-position: -5px -59px;
+  width: 56px;
+  height: 32px;
+}
+footer .social-links ul li .vk:hover, footer .social-links ul li .inst:hover {
+  background-position: -71px -59px;
+}
+footer .social-links ul li .inst {
+  width: 44px;
+  height: 44px;
+  background-position: -5px -5px;
+}
+footer .social-links ul li .inst:hover {
+  background-position: -59px -5px;
 }
 
 /*# sourceMappingURL=main.css.map */

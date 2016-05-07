@@ -11,9 +11,9 @@
 }
 
 //variables
-$roboto-con: 'Roboto Condensed';
-$button-color: #15293a;
-$catch-color: #f83861;
+$font-roboto-con: 'Roboto Condensed';
+$color-button: #15293a;
+$color-catch: #f83861;
 
 .default-btn {
     font-size: 25px;
@@ -200,7 +200,7 @@ div.navbar-header > a {
     background-size: contain;
 
     .description {
-        font-family: $roboto-con;
+        font-family: $font-roboto-con;
         font-weight: 400;
         font-size: 48px;
         text-transform: uppercase;
@@ -226,7 +226,7 @@ div.navbar-header > a {
     background-color: #282726;
 
     h1 {
-        font: bold 78px $roboto-con;
+        font: bold 78px $font-roboto-con;
         color: #fff;
         text-transform: uppercase;
 
@@ -323,13 +323,13 @@ div.navbar-header > a {
     background-position: 80% 140%, 20% 95%, 0 105%;
 
     h1 {
-        font: bold 120px $roboto-con;
-        color: $catch-color;
+        font: bold 120px $font-roboto-con;
+        color: $color-catch;
         margin-bottom: 40px;
     }
 
     .carousel {
-        font: italic 48px $roboto-con;
+        font: italic 48px $font-roboto-con;
         line-height: 48px;
         color: #242c33;
         margin-bottom: 70px;
@@ -384,11 +384,11 @@ div.navbar-header > a {
 
     h1 {
         margin-bottom: 80px;
-        font: bold 80px $roboto-con;
+        font: bold 80px $font-roboto-con;
         text-transform: uppercase;
 
         span {
-            color: $catch-color;
+            color: $color-catch;
         }
     }
 
@@ -402,13 +402,13 @@ div.navbar-header > a {
         }
 
         .akcii {
-            font: italic 20px $roboto-con;
+            font: italic 20px $font-roboto-con;
         }
 
         .make-call {
             margin-top: 85px;
             @extend .default-btn;
-            background-color: $catch-color;
+            background-color: $color-catch;
             padding-left: 60px;
             padding-right: 60px;
         }
@@ -427,7 +427,7 @@ div.navbar-header > a {
         text-transform: uppercase;
         font: {
             size: 60px;
-            family: $roboto-con;
+            family: $font-roboto-con;
             style: italic;
             weight: bold;
         }
@@ -514,7 +514,10 @@ div.navbar-header > a {
 }
 
 footer {
-    padding: 65px 0;
+    padding: {
+        top: 65px;
+        bottom: 25px;
+    }
     background: {
         color: #535960;
         image: url('images/footer-bg.png');
@@ -532,8 +535,13 @@ footer {
             }
             font-weight: 100;
 
-            &:hover {
-                color: $navbar-default-link-hover-color;
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                &:hover {
+                    color: $navbar-default-link-hover-color;
+                }
             }
         }
     }
@@ -544,14 +552,78 @@ footer {
         opacity: 0.9;
     }
 
-    .contacts-work {
-        margin-top: 30px;
-        color: $navbar-default-link-hover-color;
-        text-transform: uppercase;
-        font: {
-            size: 30px;
-            weight: 700;
+    .inform {
+        .contacts-work {
+            margin-top: 30px;
+            color: $navbar-default-link-hover-color;
+            text-transform: uppercase;
+            font: {
+                size: 30px;
+                weight: 700;
+            }
         }
+
+        ul {
+            list-style: none;
+
+            li {
+                vertical-align: top;
+                text-align: left;
+                font: {
+                    weight: 100;
+                    size: 13px;
+                }
+                display: inline-block;
+                width: 320px;
+
+                p {
+                    margin: 0;
+                    padding: 0;
+
+                    span {
+                        color: $color-catch;
+                    }
+                }
+            }
+        }
+    }
+
+    .social-links {
+        margin-top: 45px;
+
+        ul {
+            list-style: none;
+
+            li {
+                display: inline-block;
+                margin-right: 55px;
+
+                .vk {
+                    background-image: url('images/foot_sprite.png');
+                    background-repeat: no-repeat;
+                    display: block;
+                    background-position: -5px -59px;
+                    width: 56px;
+                    height: 32px;
+
+                    &:hover {
+                        background-position: -71px -59px;
+                    }
+                }
+
+                .inst {
+                    @extend .vk;
+                    width: 44px;
+                    height: 44px;
+                    background-position: -5px -5px;
+                    
+                    &:hover {
+                        background-position: -59px -5px;
+                    }
+                }
+            }
+        }
+
     }
 }
 

@@ -36,10 +36,10 @@
             <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
-                        <li><a href="#">О НАС <span class="sr-only">(current)</span></a></li>
-                        <li><a href="#">Меню</a></li>
-                        <li><a href="#">Галерея</a></li>
-                        <li><a href="#">Контакты</a></li>
+                        <li><a href="#about-us">О НАС <span class="sr-only">(current)</span></a></li>
+                        <li><a href="#menu">Меню</a></li>
+                        <li><a href="#gallery">Галерея</a></li>
+                        <li><a href="#contacts">Контакты</a></li>
                         <li class="icon pull-right">
                             <div class="tele ">
                                 <img src="images/phone.png" alt="">
@@ -74,7 +74,7 @@
                 <img src="images/rotate-3.png" class="img-responsive rotate-3" alt="">
             </div>
         </div>
-        <div class="row bg-grey">
+        <div class="row bg-grey" id="about-us">
             <div class="col-md-6">
             </div>
             <div class="col-md-4">
@@ -88,7 +88,7 @@
             </div>
             <div class="col-md-2"></div>
         </div>
-        <div class="row menu-row visible-lg visible-md">
+        <div id="menu" class="row menu-row visible-lg visible-md">
             <div class="col-md-2"></div>
             <div class="col-md-10 heading">
                 <h1>Собери <span>wok box</span> в своём вкусе</h1>
@@ -131,7 +131,7 @@
                 </div>
             </div>
         </div>
-        <div class="row our-life text-center">
+        <div id="gallery" class="row our-life text-center">
             <h1>НАША ЖИЗНЬ</h1>
             <div id="carousel-example-generic" class="carousel slide text-center" data-ride="carousel">
               <!-- Wrapper for slides -->
@@ -181,25 +181,39 @@
                 <input type="button" class="btn btn-default" value="Отправить">
             </form>
         </div>
-        <div class="row phone-row text-center">
+        <div id="contacts" class="row phone-row text-center">
             <span class="glyphicon glyphicon-earphone phone-icon" aria-hidden="true"></span>
             <p class="tel-number"><span>Позвоните нам: </span>8-707-483-50-21</p>
             <p class="ask-us">Мы с радостью проконсультируем Вас по нпшему меню и ответим на интересующие вопросы</p>
         </div>
         <footer class="row text-center">
             <ul class="foot-nav">
-                <li class="nav-item">О нас</li>
-                <li class="nav-item">Меню</li>
-                <li class="nav-item">Галлерея</li>
-                <li class="nav-item">Контакты</li>
+                <li class="nav-item"><a class="foot-link" href="#about-us">О нас</a></li>
+                <li class="nav-item"><a class="foot-link" href="#menu">Меню</a></li>
+                <li class="nav-item"><a class="foot-link" href="#gallery">Галлерея</a></li>
+                <li class="nav-item"><a class="foot-link" href="#contacts">Контакты</a></li>
             </ul>
             <div class="asia-name"><span>Asia town</span></div>
             <div class="inform">
                 <p class="contacts-work">Контакты и данные</p>
                 <ul class="iform">
+                    <li class="iform-item">
+                        <p>г.Кокшетау</p>
+                        <p>Ул. Ауэзова 238а Магазин “Планета”</p>
+                        <p>Район университета “КУАМ” , СШ №2</p>
+                    </li>
+                    <li class="iform-item">
+                        <p>Часы работы 11:00-20:30 (Понедельник, вторник, среда, четверг),</p>
+                        <p>11:00-21:30 Пятница, Суббота, Воскресенье.</p>
+                        <p><span>Воскресенье</span> санитарный день с 10:00-16:00.</p>
+                    </li>
                     <li class="iform-item"></li>
-                    <li class="iform-item"></li>
-                    <li class="iform-item"></li>
+                </ul>
+            </div>
+            <div class="social-links">
+                <ul>
+                    <li><a href="#"><div class="vk"></div></a></li>
+                    <li><a href="#"><div class="inst"></div></a></li>
                 </ul>
             </div>
         </footer>
