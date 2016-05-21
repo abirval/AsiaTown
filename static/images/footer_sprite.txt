@@ -1,0 +1,29 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-inst {
+    width: 44px;
+    height: 44px;
+    background-position: -5px -5px;
+}
+
+.sprite-inst_hover {
+    width: 44px;
+    height: 44px;
+    background-position: -59px -5px;
+}
+
+.sprite-vk {
+    width: 56px;
+    height: 32px;
+    background-position: -5px -59px;
+}
+
+.sprite-vk_hover {
+    width: 56px;
+    height: 32px;
+    background-position: -71px -59px;
+}
