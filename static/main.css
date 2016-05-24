@@ -7345,6 +7345,10 @@ button.close {
   font-family: 'Razmahont';
   src: url("fonts/8408.ttf");
 }
+@font-face {
+  font-family: 'MadeInChina';
+  src: url("fonts/madeInChina.TTF");
+}
 .default-btn, .work-hours .col-md-4 .tel-btn, .bg-grey .tel2-btn, .delivery .descr .make-call, .subbing .form-inline .btn {
   font-size: 25px;
   text-transform: uppercase;
@@ -7665,6 +7669,7 @@ div.navbar-header > a {
 }
 
 .subbing {
+  background-image: url("images/123.png");
   background-color: #d2d6d3;
   padding-top: 100px;
   padding-bottom: 100px;
@@ -7764,9 +7769,11 @@ footer .foot-nav .nav-item a:hover {
   color: #ffb932;
 }
 footer .asia-name {
+  font-family: 'MadeInChina';
+  font-size: 30px;
   margin-top: 50px;
   color: #fff;
-  opacity: 0.9;
+  opacity: 0.7;
 }
 footer .inform .contacts-work {
   margin-top: 30px;
@@ -7782,7 +7789,7 @@ footer .inform ul li {
   vertical-align: top;
   text-align: left;
   font-weight: 100;
-  font-size: 13px;
+  font-size: 14px;
   display: inline-block;
   width: 320px;
 }

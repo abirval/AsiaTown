@@ -10,6 +10,11 @@
     src: url('fonts/8408.ttf');
 }
 
+@font-face {
+    font-family: 'MadeInChina';
+    src: url('fonts/madeInChina.TTF');
+}
+
 //variables
 $font-roboto-con: 'Roboto Condensed';
 $color-button: #15293a;
@@ -416,6 +421,7 @@ div.navbar-header > a {
 }
 
 .subbing {
+    background-image: url('images/123.png');
     background-color: #d2d6d3;
     padding-top: 100px;
     padding-bottom: 100px;
@@ -547,9 +553,13 @@ footer {
     }
 
     .asia-name {
+        font: {
+            family: 'MadeInChina';
+            size: 30px;
+        }
         margin-top: 50px;
         color: #fff;
-        opacity: 0.9;
+        opacity: 0.7;
     }
 
     .inform {
@@ -571,7 +581,7 @@ footer {
                 text-align: left;
                 font: {
                     weight: 100;
-                    size: 13px;
+                    size: 14px;
                 }
                 display: inline-block;
                 width: 320px;
@@ -616,7 +626,7 @@ footer {
                     width: 44px;
                     height: 44px;
                     background-position: -5px -5px;
-                    
+
                     &:hover {
                         background-position: -59px -5px;
                     }
