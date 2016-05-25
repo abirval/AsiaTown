@@ -47,18 +47,23 @@ window.addEventListener('load', function () {
 			.removeClass('active');
 	});
 
-  // $(window).scroll(function () {
-  //   console.log($('.rotate-1'));
-  //   $('.rotate-1').animate({
-  //     top: '+=10px'
-  //   }, 1);
-  //   });
-
-
   $('a').click(function(){
     $('html, body').animate({
       scrollTop: $( $.attr(this, 'href') ).offset().top
     }, 500);
     return false;
   });
+
+  chieesMan();
 });
+
+function chieesMan() {
+  var tabList = document.getElementById('tab-list');
+  var picContainer = document.getElementById('Picture-container');
+
+  tabList.addEventListener('click', function (e){
+    var pic = e.target.dataset.picture;
+
+    console.log(pic + '.jpg');
+  });
+}
